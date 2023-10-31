@@ -39,6 +39,23 @@ header {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  background-color: darkgreen;
+}
+header h1 {
+  padding: 0 20px;
+  background-color: greenyellow;
+  border: solid darkgreen 5px
+}
+header nav {
+  position: relative;
+  bottom: 10px;
+}
+header nav a {
+  color: greenyellow;
+  margin: 0 1vw;
+  text-decoration: none;
+  border-bottom: solid greenyellow 2px;
+  padding-bottom: 5px;
 }
 .page-section {
   display: grid;
@@ -60,12 +77,13 @@ header {
   grid-area: rest;
   padding-left: 15px;
   margin-bottom: 30px;
+  padding-top: 15px;
 }
 #portfolio {
   grid-area: rest;
   padding-left: 15px;
   display: grid;
-  grid-template-rows: 200px 100px 100px;
+  grid-template-rows: 250px 150px 150px;
   grid-template-columns: 50% 50%;
   grid-template-areas:
   "Seo Seo"
