@@ -1,7 +1,10 @@
 * {
   box-sizing: border-box;
 }
-
+:root {
+  --letter-color: rgb(12, 74, 12);
+  --border-color: greenyellow;
+}
 body {
   margin: 0;
   padding: 0;
@@ -17,7 +20,12 @@ h5,
 h6 {
   margin: 0;
 }
-
+a {
+  color: var(--letter-color);
+}
+a:hover {
+  border: solid 3px green;
+}
 p {
   margin: 0;
 }
@@ -29,7 +37,7 @@ p {
 .hero-banner div h2 {
   background-color: bisque;
   padding: 5px;
-  border-bottom: solid 3px greenyellow;
+  border-bottom: solid 3px var(--border-color);
   position: absolute;
   display: inline;
   top: 180px;
@@ -43,7 +51,7 @@ header {
 }
 header h1 {
   padding: 0 20px;
-  background-color: greenyellow;
+  background-color: var(--border-color);
   border: solid darkgreen 5px
 }
 header nav {
@@ -51,10 +59,10 @@ header nav {
   bottom: 10px;
 }
 header nav a {
-  color: greenyellow;
+  color: var(--border-color);
   margin: 0 1vw;
   text-decoration: none;
-  border-bottom: solid greenyellow 2px;
+  border-bottom: solid var(--border-color) 2px;
   padding-bottom: 5px;
 }
 .page-section {
@@ -69,7 +77,7 @@ header nav a {
 .page-section h2 {
   grid-area: h2;
   text-align: right;
-  border-right: solid 3px greenyellow;
+  border-right: solid 3px var(--border-color);
   margin-bottom: 30px;
   padding-right: 15px;
 }
@@ -107,7 +115,7 @@ header nav a {
 .Seo div {
   background-color: bisque;
   padding: 5px;
-  border-bottom: solid 3px greenyellow;
+  border-bottom: solid 3px var(--border-color);
   position: relative;
   display: inline-block;
   bottom: -100px;
@@ -121,10 +129,13 @@ header nav a {
   margin-bottom: 10px;
 }
 /* led button */
-.LED div {
+.LED div,
+.calculator div,
+.puzzels div,
+.run div {
   background-color: bisque;
   padding: 5px;
-  border-bottom: solid 3px greenyellow;
+  border-bottom: solid 3px var(--border-color);
   position: relative;
   display: inline-block;
   bottom: -10px;
@@ -137,15 +148,6 @@ header nav a {
   margin-bottom: 10px;
   margin-left: 5px;
 }
-.calculator div {
-  background-color: bisque;
-  padding: 5px;
-  border-bottom: solid 3px greenyellow;
-  position: relative;
-  display: inline-block;
-  bottom: -10px;
-  opacity: 0.9;
-}
 .puzzels {
   background-image: url(../images/02-portfolio-3.jpg);
   grid-area: puzzels;
@@ -153,28 +155,22 @@ header nav a {
   margin-right: 5px;
   margin-bottom: 10px;
 }
-.puzzels div {
-  background-color: bisque;
-  padding: 5px;
-  border-bottom: solid 3px greenyellow;
-  position: relative;
-  display: inline-block;
-  bottom: -10px;
-  opacity: 0.9;
-}
  .run {
   background-image: url(../images/02-run-buddy.jpg);
   grid-area: run;
   background-size: cover;
   margin-bottom: 10px;
   margin-left: 5px;
+  color: var(--letter-color);
  }
- .run div {
-  background-color: bisque;
-  padding: 5px;
+/* this were supposed to scroll smoothly */
+.page-wrapper {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+#contact a {
+  text-decoration: none;
+  font-weight: 900;
   border-bottom: solid 3px greenyellow;
-  position: relative;
-  display: inline-block;
-  bottom: -10px;
-  opacity: 0.9;
+  margin-bottom: 50px;
 }
