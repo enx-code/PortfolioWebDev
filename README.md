@@ -9,5 +9,5 @@ In this application i linked code war kata and SEO first week application, to be
 
 - This portfolio live on [here](https://enx-code.github.io/PortfolioWebDev/)
 
-![alt text](./starter/images/Screenshot%202023-10-31%20at%2023.31.14.png)
+![alt text](./images/Screenshot%202023-10-31%20at%2023.31.14.png)
 
