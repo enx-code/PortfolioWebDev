@@ -6,5 +6,5 @@ In this application i linked code war kata and SEO first week application, to be
 - Hoover,
 - Grid,
 - Flex
-```md
-![alt text](images)
+
+![alt text](./images/Screenshot%202023-10-31%20at%2023.31.14.png)
