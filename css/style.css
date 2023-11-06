@@ -25,6 +25,7 @@ a {
 }
 a:hover {
   border: solid 3px green;
+  transform:scale(1.02)
 }
 p {
   margin: 0;
@@ -121,7 +122,7 @@ header nav a {
   bottom: -100px;
   opacity: 0.9;
 }
-.LED {
+.CodeWars {
   background-image: url(../images/codewars.png);
   background-size: cover;
   grid-area: LED;
@@ -129,7 +130,7 @@ header nav a {
   margin-bottom: 10px;
 }
 /* led button */
-.LED div,
+.CodeWars div,
 .calculator div,
 .puzzels div,
 .run div {
