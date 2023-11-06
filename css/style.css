@@ -122,7 +122,7 @@ header nav a {
   opacity: 0.9;
 }
 .LED {
-  background-image: url(../images/02-portfolio-1.jpg);
+  background-image: url(../images/codewars.png);
   background-size: cover;
   grid-area: LED;
   margin-right: 5px;
